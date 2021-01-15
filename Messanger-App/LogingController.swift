@@ -66,6 +66,7 @@ class LogingController: UIViewController {
         if isDataInputedFor(type: "password"){
 //            reset pasword
         }else {
+            
             ProgressHUD.showFailed("Email is required.")
         }
     }

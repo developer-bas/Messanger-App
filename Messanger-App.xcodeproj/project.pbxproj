@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153400F325B1511A00154046 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153400F225B1511A00154046 /* Constant.swift */; };
 		155190C025A9B85E00307939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155190BF25A9B85E00307939 /* AppDelegate.swift */; };
 		155190C225A9B85E00307939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155190C125A9B85E00307939 /* SceneDelegate.swift */; };
 		155190C425A9B85E00307939 /* LogingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155190C325A9B85E00307939 /* LogingController.swift */; };
@@ -14,10 +15,12 @@
 		155190C925A9B85F00307939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155190C825A9B85F00307939 /* Assets.xcassets */; };
 		155190CC25A9B85F00307939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155190CA25A9B85F00307939 /* LaunchScreen.storyboard */; };
 		155190F825AA7EC000307939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 155190F725AA7EC000307939 /* GoogleService-Info.plist */; };
+		15B1692E25B14E8400BFB970 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1692D25B14E8400BFB970 /* User.swift */; };
 		E91A52C69FFE0C6CC0009B95 /* Pods_Messanger_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9DA0E8B16D41160B5BEB7F /* Pods_Messanger_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153400F225B1511A00154046 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		155190BC25A9B85E00307939 /* Messanger-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Messanger-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		155190BF25A9B85E00307939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		155190C125A9B85E00307939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		155190CB25A9B85F00307939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155190CD25A9B85F00307939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		155190F725AA7EC000307939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15B1692D25B14E8400BFB970 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EC3D1B0D884B6272EF4C3A2 /* Pods-Messanger-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messanger-App.release.xcconfig"; path = "Target Support Files/Pods-Messanger-App/Pods-Messanger-App.release.xcconfig"; sourceTree = "<group>"; };
 		BF9DA0E8B16D41160B5BEB7F /* Pods_Messanger_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messanger_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16A2EFB9FB4047724628C5D /* Pods-Messanger-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messanger-App.debug.xcconfig"; path = "Target Support Files/Pods-Messanger-App/Pods-Messanger-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,8 +77,18 @@
 				155190C825A9B85F00307939 /* Assets.xcassets */,
 				155190CA25A9B85F00307939 /* LaunchScreen.storyboard */,
 				155190CD25A9B85F00307939 /* Info.plist */,
+				15B1693025B14E8F00BFB970 /* Model */,
+				153400F225B1511A00154046 /* Constant.swift */,
 			);
 			path = "Messanger-App";
+			sourceTree = "<group>";
+		};
+		15B1693025B14E8F00BFB970 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15B1692D25B14E8400BFB970 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		16889BAE4C80E8756998CD51 /* Pods */ = {
@@ -209,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B1692E25B14E8400BFB970 /* User.swift in Sources */,
 				155190C425A9B85E00307939 /* LogingController.swift in Sources */,
+				153400F325B1511A00154046 /* Constant.swift in Sources */,
 				155190C025A9B85E00307939 /* AppDelegate.swift in Sources */,
 				155190C225A9B85E00307939 /* SceneDelegate.swift in Sources */,
 			);
