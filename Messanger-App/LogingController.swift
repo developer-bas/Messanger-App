@@ -55,7 +55,7 @@ class LogingController: UIViewController {
     @IBAction func logingBtnPressed(_ sender: Any) {
         
         if isDataInputedFor(type: isLogin ? "login" : "registration"){
-//            Loging
+            isLogin ? loginUser() : registerUser()
         }else {
             ProgressHUD.showFailed("All fields are required")
         }
@@ -150,5 +150,26 @@ class LogingController: UIViewController {
             return emailTxtField.text != ""
         }
     }
+    
+    private func loginUser(){
+        
+    }
+    private func registerUser(){
+        if passwordTxtField.text == repeatPasswordTxtField.text{
+            FirebaseUserListener.shared.registerUserWith(email: emailTxtField.text!, password: passwordTxtField.text!) { (error) in
+                 
+                if error == nil {
+                    ProgressHUD.showSuccess("Verificate your email")
+                    self.resendBtn.isHidden = false
+                } else  {
+                    
+                    ProgressHUD.showFailed(error?.localizedDescription)
+                }
+            }
+        }else{
+            ProgressHUD.showError("The password don't match ")
+        }
+    }
+    
 }
 
